@@ -1,6 +1,6 @@
 {
   "name": "metalsmith-simple-shortcodes",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "description": "Same functionality as metalsmith-flexible-shortcodes without gulp, traceur and lodash dependencies",
   "main": "lib/index.js",
   "scripts": {
