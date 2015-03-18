@@ -16,10 +16,6 @@ function msFactory(dir, plugins, done) {
     ms.clean(false);
 
 
-    //each(plugins, function(plugin) {
-        //ms.use(plugin.fn(plugin.opts));
-    //});
-    console.log(Object.keys(plugins));
     plugins.forEach(function(plugin) {
       ms.use(plugin.fn(plugin.opts));
     });
