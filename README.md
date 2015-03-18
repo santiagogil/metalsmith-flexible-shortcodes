@@ -63,10 +63,9 @@ If true, it will clean any `<p>`-Tags around the shortcodes, this is needed when
 It is recommended you run this plugin after your markdown parser, otherwise you won't be able to use fenced code blocks. If you run into this issue also make sure to turn on the `clean` option.
 
 
-##Building
-This plugin is written in ES6 syntax, therefore you will need to compile it. 
-Firstly run `$ npm install` and then `$ gulp`.
-
+##Credit
+All the credit is to Robin Thrift. I just removed dependecies in order
+to simplify and avoid version conflicts.
 
 ##License
 The MIT License (MIT)
