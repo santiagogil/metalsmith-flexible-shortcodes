@@ -2,8 +2,7 @@ var should     = require('should'),
     dirEqual   = require('assert-dir-equal'),
     rm         = require('rimraf').sync,
     path       = require('path'),
-    Metalsmith = require('metalsmith'),
-    each       = require('lodash.forEach');
+    Metalsmith = require('metalsmith');
 
 require('mocha');
 
@@ -17,8 +16,12 @@ function msFactory(dir, plugins, done) {
     ms.clean(false);
 
 
-    each(plugins, function(plugin) {
-        ms.use(plugin.fn(plugin.opts));
+    //each(plugins, function(plugin) {
+        //ms.use(plugin.fn(plugin.opts));
+    //});
+    console.log(Object.keys(plugins));
+    plugins.forEach(function(plugin) {
+      ms.use(plugin.fn(plugin.opts));
     });
     
     ms.destination('../../tmp');
