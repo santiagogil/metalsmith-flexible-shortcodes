@@ -1,4 +1,4 @@
-#Metalsmith Flexible Shortcodes
+# Metalsmith Flexible Shortcodes
 
 Although there is a plugin called [metalsmith-shortcodes](https://github.com/ericgj/metalsmith-shortcodes) it doesn't really work the
 way you expected (and how they work in WordPress, unlike stated). 
@@ -9,7 +9,7 @@ This aims to be a lot closer to the way the shortcodes work in WordPress:
 Internally this plugin uses [shortcode-parser](https://github.com/derdesign/shortcode-parser) to parse and render the shortcodes.
 
 
-##Examples
+## Examples
 ```markdown
 ---
 title: Test Page
@@ -37,12 +37,12 @@ Metalsmith(__dirname)
 
 For more infos on how the shortcodes work check out [shortcode-parser](https://github.com/derdesign/shortcode-parser).
 
-##Options
+## Options
 
 ### `shortcodes`
 An object with key value pairs, where each key represents the shortcode name, e. g. `[name]` and its value is the function that will be executed for this shortcode.
 
-####Example
+#### Example
 ```js
 {
     shortcodes: {
@@ -59,15 +59,15 @@ Can then be used as `[flickr]` in your files.
 If true, it will clean any `<p>`-Tags around the shortcodes, this is needed when you render your files with markdown in some cases.
 
 
-##Notes
+## Notes
 It is recommended you run this plugin after your markdown parser, otherwise you won't be able to use fenced code blocks. If you run into this issue also make sure to turn on the `clean` option.
 
 
-##Credit
+## Credit
 All the credit is to Robin Thrift. I just removed dependecies in order
 to simplify and avoid version conflicts.
 
-##License
+## License
 The MIT License (MIT)
 
 Copyright (c) 2014 Robin Thrift
