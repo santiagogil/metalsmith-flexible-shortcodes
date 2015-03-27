@@ -4,7 +4,7 @@
   "description": "Same functionality as metalsmith-flexible-shortcodes without gulp, traceur and lodash dependencies",
   "main": "lib/index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha test/test.js -R travis-cov"
   },
   "repository": {
     "type": "git",
@@ -21,11 +21,15 @@
   },
   "devDependencies": {
     "assert-dir-equal": "^1.0.1",
+    "blanket": "^1.1.6",
     "metalsmith": "^0.8.0",
     "metalsmith-markdown": "^0.2.1",
     "mocha": "^1.20.0",
+    "next-update": "^0.7.4",
     "rimraf": "^2.2.8",
     "should": "^4.0.0",
+    "travis-cov": "^0.2.5",
     "xtend": "^4.0.0"
-  }
+  },
+  "config": { "travis-cov": { "threshold": 30 } }
 }

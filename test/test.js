@@ -4,7 +4,11 @@ var should     = require('should'),
     path       = require('path'),
     Metalsmith = require('metalsmith');
 
-require('mocha');
+    var blanket = require("blanket")({
+         /* options are passed as an argument object to the require statement */
+            "pattern": "/"
+               });
+    require('mocha');
 
 
 function msFactory(dir, plugins, done) {
