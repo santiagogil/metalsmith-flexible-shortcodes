@@ -4,7 +4,7 @@
   "description": "Same functionality as metalsmith-flexible-shortcodes without gulp, traceur and lodash dependencies",
   "main": "lib/index.js",
   "scripts": {
-    "test": "mocha test/test.js --reporter mocha-lcov-reporter | coveralls"
+    "test": "mocha test/test.js --reporter mocha-lcov-reporter | CODECLIMATE_REPO_TOKEN=640496189416a967afc1e08505ee02a31d6adf3c664a8bf4a38c42e9733181d7 codeclimate"
   },
   "repository": {
     "type": "git",
@@ -22,10 +22,12 @@
   "devDependencies": {
     "assert-dir-equal": "^1.0.1",
     "blanket": "^1.1.6",
+    "codeclimate-test-reporter": "0.0.4",
     "coveralls": "^2.11.2",
     "metalsmith": "^0.8.0",
     "metalsmith-markdown": "^0.2.1",
     "mocha": "^1.20.0",
+    "mocha-lcov-reporter": "0.0.2",
     "next-update": "^0.7.4",
     "rimraf": "^2.2.8",
     "should": "^4.0.0",
