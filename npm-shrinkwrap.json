@@ -1,0 +1,11 @@
+{
+  "name": "metalsmith-simple-shortcodes",
+  "version": "0.4.3",
+  "dependencies": {
+    "shortcode-parser": {
+      "version": "0.0.1",
+      "from": "shortcode-parser@0.0.1",
+      "resolved": "https://registry.npmjs.org/shortcode-parser/-/shortcode-parser-0.0.1.tgz"
+    }
+  }
+}
