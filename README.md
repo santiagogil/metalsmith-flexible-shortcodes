@@ -1,7 +1,7 @@
 [![Build
-Status](https://travis-ci.org/santiagogil/metalsmith-flexible-shortcodes.svg?branch=master)](https://travis-ci.org/santiagogil/metalsmith-flexible-shortcodes)
+Status](https://travis-ci.org/santiagogil/metalsmith-simple-shortcodes.svg?branch=master)](https://travis-ci.org/santiagogil/metalsmith-simple-shortcodes)
 
-# Metalsmith Flexible Shortcodes
+# Metalsmith (simple) Flexible Shortcodes
 
 Although there is a plugin called [metalsmith-shortcodes](https://github.com/ericgj/metalsmith-shortcodes) it doesn't really work the
 way you expected (and how they work in WordPress, unlike stated). 
