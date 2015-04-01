@@ -6,6 +6,11 @@
       "version": "0.0.1",
       "from": "shortcode-parser@0.0.1",
       "resolved": "https://registry.npmjs.org/shortcode-parser/-/shortcode-parser-0.0.1.tgz"
+    },
+    "xtend": {
+      "version": "4.0.0",
+      "from": "xtend@^4.0.0",
+      "resolved": "https://registry.npmjs.org/xtend/-/xtend-4.0.0.tgz"
     }
   }
 }
